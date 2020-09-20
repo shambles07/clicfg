@@ -1,0 +1,31 @@
+Channel: {{channel}}
+Context: {{context}}
+Extension: {{exten}}
+
+{% if priority %}
+Priority: {{priority}}
+{% endif %}
+
+{% if setvar %}
+Setvar: {{setvar}}
+{% endif %}
+
+{% if account %}
+Account: {{account}}
+{% endif %}
+
+{% if callerid %}
+Callerid: {{callerid}}
+{% endif %}
+
+{% if max_retries %}
+MaxRetries: {{max_retries}}
+{% endif %}
+
+{% if retry_time %}
+RetryTime: 60
+{% endif %}
+
+{% if wait_time %}
+WaitTime: 30
+{% endif %}
